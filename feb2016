@@ -1,0 +1,41 @@
+//boys button
+//Boys.c
+//A simple program to let my young children know which house 
+//they would be at (mom's or dad's) for the month of Feb 2016
+
+//the program was also early on in my programming career. I had only 
+//been a coder for 4 weeks at this point...
+
+//D.Foster
+
+#include <stdio.h>
+
+
+int main(void){
+
+int choice, i;
+
+
+int Dads[]={1,2,5,6,7,10,11,15,16,19,20,21,24,25,29};
+int Moms[]={3,4,8,9,12,13,14,17,18,22,23,26,27,28};
+
+	
+	printf("---------------------------------------------------------------------\n");
+	printf("Hey Guys, want to know whose house you are at any night this month?\n");
+	printf("\nEnter the number day of any day this month: \n");
+	scanf("%d", &choice);
+
+	for(i=0; i<15; i++){
+		if(Dads[i]==choice){
+			printf("Awesome, you are at Dad's House!\n");
+			printf("I wonder what cool thing he has planned for your time?\n");
+			}
+
+		if(Moms[i]==choice){
+			printf("Awesome, you are at Mom's House!\n");
+			printf("I wonder what cool thing she has planned for your time?\n");
+			}
+		}
+	  printf("-------------------------------------------------------------------\n");
+return 0;
+}
